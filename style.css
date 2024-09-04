@@ -1,0 +1,133 @@
+.uday{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+header{
+   position: sticky;
+   z-index: 20;
+   top: 0;
+}
+
+hr{
+   border: 2px solid;
+}
+
+#carouselExampleSlidesOnly{
+   margin-left:530px;
+}
+
+
+#head{
+   margin-top: 8%;
+}
+
+.homefont{
+   font-size: 3rem;
+   font-weight: 750;
+}
+
+.bakerylogo{
+   width: 10%;
+   border-radius: 50%;
+   
+}
+
+.content:hover{
+   background-color: black;
+   color: white;
+   border-radius: 10px;
+
+}
+
+.content{
+   margin-right: 3rem;
+   color: black;
+}
+
+.imgcarousal{
+ height:300px
+}
+
+
+
+.sub-container{
+    position: relative;
+    /* border: 2px solid; */
+    height: 40vh;
+    margin-bottom: 50%;
+ }
+
+
+ footer{
+   background-color: black;
+   height: 100%;
+   color: white;
+   /* display: flex;
+   justify-content: space-evenly; */
+   padding: 5%;
+   margin-top: 6%;
+ 
+ }
+
+
+ .item4{
+   /* margin-top: 70%; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+ }
+
+ .biscuit{
+    margin-left: 18%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    top: 100%;
+    transition: all 0.8s ease-in-out;
+    filter: drop-shadow(2px 2px 10px rgb(225, 161, 48));
+
+ }
+
+ .multigrain{
+   width: 20vw;
+   height: 38.8vh;
+ }
+  .sub-container:hover .baskets{
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+ }
+ .sub-container:hover>.biscuit{
+    top: 0;
+ }
+ .bis-name{
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.6;
+ }
+ .separate{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ button{
+    border-radius: 16px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid;
+ }
+ button:hover{
+    background-color: black;
+    color: white;
+ }
+
+
+ @media screen and (min-width:300px) and (max-width:768px) {
+    #imgdistance{
+        margin-bottom: 30%;
+    }
+    .biscuit{
+        margin-left: 20%;
+    }
+ }

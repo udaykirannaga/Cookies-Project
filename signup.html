@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body{
+	margin: 0;padding: 0;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+    background-image: url("./bakery\ back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+	width: 350px;
+    height: 500px;
+    text-align: center;
+    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+    background-image: url("./bakery\ back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: 0px 0px 30px 15px black; */
+    box-shadow: 0px 0px 30px 15px black;
+    border-radius: 10px;
+    /* margin-top: 80px; */
+    margin-right: 50%;
+    overflow: hidden;
+}
+#check{
+    display: none;
+}
+  label  {
+	display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all ease-in-out;	
+}
+.signin-box label{
+    color: #0f0c29;
+    transform: scale(.6);
+}
+.inputs{
+	padding: 80px 80px 80px 60px;
+    margin: auto;
+}
+input{
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+width: 200px;
+outline: none;
+/* background-color: #e6d4f5; */
+}
+button{
+	padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    border: none;
+    /* background-color:#0f0c29 ; */
+    background-color: #4e1c78;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50PX;
+    margin-left: 30px;
+}
+button:hover{
+    /* background-color: #4e1c77; */
+    /* background-color:white;
+    color: black; */
+    background-color: black;
+    color: white;
+    border: 1px solid;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+.signin-box {
+    background-color: white;
+    border-radius: 60% / 10%;
+    height: 500px;
+    width: 349px;
+    margin-top: 80px;
+    transform: translateY( -120px);
+    transition: .10s ease-in-out;
+}
+.signin-box input{
+    background-color: white;
+    border: 1px solid black;
+    /* background-color: rgb(164, 96, 96); */
+    outline: none;
+}
+#check:checked ~ .signin-box{
+    transform: translateY(-470px);
+}
+#check:checked ~ .signin-box label{
+    transform: scale(1);
+}
+
+/* #check:checked ~ .singup-box label{
+} */
+@media only screen and (max-width: 600px){
+
+		.main{
+			margin-top: 260px;
+		}
+}
+
+
+@media only screen and (min-width:310px) and (max-width:598px){
+    .main{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+    </style>
+</head>
+<body>
+    <body>
+	
+        <div class="main">
+            <input type="checkbox" name="changer" id="check">
+            
+            <div class="singup-box">
+                <form>
+                    <label for="check">Sign up</label>
+                    <div class="inputs">
+                        <input type="text" name="uname" placeholder="User name" required>
+                        <input type="email" name="uemail" placeholder="Email" required>
+                        <input type="password" name="upwd" placeholder="Password" required><br>
+                        <button><a href="loginpage.html">Sign up</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="signin-box">
+                <form>
+                    <label for="check">Sign In</label>
+                    <div class="inputs">
+                        <input type="email" name="uemail" alt="signin-uname" placeholder="Email" required>
+                        <input type="password" name="upwd" alt="upwd" placeholder="Password" required>
+                        <button><a href="#"  >Sign In</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</body>
+</html>
